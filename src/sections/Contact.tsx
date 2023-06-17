@@ -2,7 +2,7 @@
 
 export default function Contact() {
     return (
-        <div className='max-w-6xl mx-auto bg-secondary rounded-lg p-8 sm:p-10 md:py-12 flex flex-col md:flex-row gap-8 my-10'>
+        <div className='max-w-6xl mx-auto bg-secondary rounded-lg p-8 sm:p-10 md:py-12 flex flex-col md:flex-row gap-8 my-10 md:my-16 lg:my-20 '>
             <div className='md:w-1/2'>
                 <p className='text-primary text-sm md:text-base font-semibold'>Get in touch</p>
                 <h3 className='text-white font-bold text-2xl my-3'>Have a project in mind?</h3>
