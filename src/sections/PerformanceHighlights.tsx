@@ -1,6 +1,6 @@
 export default function PerformanceHighlights() {
     return (
-        <div className='grid grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 [&>div]:rounded-lg px-2 max-w-4xl mx-auto'>
+        <div className='grid grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 [&>div]:rounded-lg max-w-4xl mx-auto'>
             <div className='flex flex-col bg-accent p-3 sm:p-5 col-span-2'>
                 <p className='text-2xl sm:text-4xl font-semibold'>90%</p>
                 <p className='text-xs sm:text-sm font-semibold'>Retention rate</p>
