@@ -1,4 +1,6 @@
-import Header from '@/components/Header';
+'use client';
+
+import Header from '@/components/ui/Header';
 import Contact from '@/sections/Contact';
 import FAQs from '@/sections/FAQs';
 import Hero from '@/sections/Hero';
