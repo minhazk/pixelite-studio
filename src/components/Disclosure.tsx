@@ -15,11 +15,11 @@ export default function Disclosure({ index, question, answer }: DisclosureProps)
 
     return (
         <div className='border-b border-white/20 py-7'>
-            <button onClick={() => setIsOpen(p => !p)} className='text-white flex items-center gap-2 justify-between w-full hover:[&>p]:text-primary'>
-                <p className='text-sm lg:text-base font-semibold grid grid-cols-[auto,1fr]'>
-                    <span className='mr-4 md:mr-8 text-white'>{index + 1}</span>
-                    {question}
-                </p>
+            <button onClick={() => setIsOpen(p => !p)} className='text-white flex items-center gap-2 justify-between w-full'>
+                <div className='text-sm lg:text-base font-semibold grid grid-cols-[auto,1fr]'>
+                    <span className='mr-4 md:mr-8'>{index + 1}</span>
+                    <p className='text-left hover:text-primary'>{question}</p>
+                </div>
                 <div className='p-1'>
                     <ChevronDown size={22} strokeWidth={3} className={`${isOpen ? 'rotate-180' : ''} transition-transform duration-300`} />
                 </div>

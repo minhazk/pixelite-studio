@@ -1,4 +1,5 @@
 import SectionContainer from '@/components/ui/SectionContainer';
+import { RefreshCcw } from 'lucide-react';
 
 export default function PerformanceHighlights() {
     return (
@@ -16,6 +17,7 @@ export default function PerformanceHighlights() {
                     <p className='text-white text-sm font-medium'>
                         We&apos;ll revise the designs until<br></br> you&apos;re 100% satisfied
                     </p>
+                    <RefreshCcw size={25} className='animate-[spin_5s_ease_infinite] text-white ml-auto mt-2' />
                 </div>
                 <div className='col-span-3 row-span-2 bg-secondary p-5 sm:p-8'>
                     <p className='text-white text-lg font-semibold mb-4'>Competition time</p>
