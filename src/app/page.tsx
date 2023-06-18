@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Contact from '@/sections/Contact';
+import FAQs from '@/sections/FAQs';
 import Hero from '@/sections/Hero';
 import PerformanceHighlights from '@/sections/PerformanceHighlights';
 import PreviousWork from '@/sections/PreviousWork';
@@ -16,6 +17,7 @@ export default function Home() {
                     <Services />
                     <PreviousWork />
                     <Contact />
+                    <FAQs />
                 </div>
             </main>
         </>
