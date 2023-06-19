@@ -31,20 +31,3 @@ export default function PreviousWork() {
         </SectionContainer>
     );
 }
-
-// export default function PreviousWork() {
-//     return (
-//         <SectionContainer id='works'>
-//             <div className='max-w-4xl mx-auto'>
-//                 <h2 className='text-primary text-center text-lg md:text-xl font-semibold mb-2'>Browse our latest works</h2>
-//                 <p className='text-white/60 text-xs text-center'>Discover our recent web and mobile app creations</p>
-
-//                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6 mt-8'>
-//                     {projects.map((project, i) => (
-//                         <ProjectCard {...project} key={i} />
-//                     ))}
-//                 </div>
-//             </div>
-//         </SectionContainer>
-//     );
-// }

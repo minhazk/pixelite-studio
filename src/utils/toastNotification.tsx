@@ -7,6 +7,6 @@ export const showToast = (text: string) => {
         position: 'bottom-center',
         clickable: true,
         clickClosable: true,
-        render: (message: ReactNode) => <div className='rounded-md border border-primary bg-secondary py-3 px-7 select-none'>{message}</div>,
+        render: (message: ReactNode) => <div className='rounded-md border bg-[#2F2C2C] py-3 px-7 select-none'>{message}</div>,
     });
 };
