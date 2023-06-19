@@ -12,7 +12,7 @@ export default function Hero() {
                 className='mt-10 relative text-xs md:text-sm lg:text-base flex gap-3 rounded-full bg-secondary [&:has(:focus-visible)]:border-accent border-2 border-transparent transition-colors'
             >
                 <input type='email' className='bg-transparent px-5 py-2 w-full rounded-full outline-none text-accent' placeholder='Type your email address' />
-                <button type='submit' className='bg-primary py-2 px-5 rounded-full whitespace-nowrap m-2 font-semibold'>
+                <button type='submit' className='bg-primary py-2 px-5 rounded-full whitespace-nowrap m-2 font-semibold hover:opacity-80 focus-within:opacity-80'>
                     Get Started
                 </button>
             </form>

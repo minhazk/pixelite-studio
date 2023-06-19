@@ -20,7 +20,7 @@ export default function Contact() {
                         className='bg-white/10 px-5 py-3 w-full text-xs sm:text-sm rounded-md resize-none h-28 outline-none text-accent border border-transparent focus-within:border-white transition-colors'
                         placeholder='Type tour email address'
                     ></textarea>
-                    <button className='bg-primary py-2 px-5 rounded-md font-semibold text-xs md:text-sm w-fit' type='submit'>
+                    <button className='bg-primary py-2 px-5 rounded-md font-semibold text-xs md:text-sm w-fit hover:opacity-80 focus-within:opacity-80' type='submit'>
                         Send
                     </button>
                 </form>

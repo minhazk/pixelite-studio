@@ -14,6 +14,24 @@ export const featuredProjects = [
 
 export const projects = [...featuredProjects];
 
+export const slides = [
+    [
+        'Completion time',
+        'Crafting Powerful Solutions with Lean Code, Fast Completion Times, and Unparalleled Quality',
+        'Trust our skilled team to deliver exceptional results. We write clean, efficient code for optimal performance. With agile development and streamlined processes, we ensure fast completion times without compromising quality',
+    ],
+    [
+        'Transform Your Ideas into Reality',
+        'Unlock the Potential of Your Business with Customized Web and Mobile App Solutions',
+        'Collaborate with us to create tailor-made web and mobile app solutions. We combine cutting-edge technologies, intuitive design, and seamless functionality to bring your vision to life',
+    ],
+    [
+        'Elevate Your Digital Presence',
+        'Delivering Engaging User Experiences and Cutting-Edge Functionality for Businesses Worldwide',
+        'Make a lasting impact with visually stunning websites and apps. We focus on user experiences that captivate and ensure seamless functionality, leveraging the latest industry trends and technologies',
+    ],
+];
+
 export const FAQ = [
     [
         'How long does it take to develop a website or mobile app?',

@@ -25,7 +25,7 @@ export default function PreviousWork() {
                 </div>
             </div>
 
-            <Link href='/' className='bg-white py-2 px-5 text-sm rounded-sm font-semibold mt-10 block mx-auto w-fit lg:hidden'>
+            <Link href='/' className='bg-white py-2 px-5 text-sm rounded-sm font-semibold mt-10 block mx-auto w-fit lg:hidden hover:opacity-80 focus-within:opacity-80'>
                 View More
             </Link>
         </SectionContainer>
