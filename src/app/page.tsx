@@ -7,18 +7,21 @@ import Hero from '@/sections/Hero';
 import PerformanceHighlights from '@/sections/PerformanceHighlights';
 import PreviousWork from '@/sections/PreviousWork';
 import Services from '@/sections/Services';
+import { useState } from 'react';
 
 export default function Home() {
+    const [emailInput, setEmailInput] = useState<string>('');
+
     return (
         <>
             <Header />
             <main>
-                <Hero />
+                <Hero setEmailInput={setEmailInput} />
                 <div className='px-2'>
                     <PerformanceHighlights />
                     <Services />
                     <PreviousWork />
-                    <Contact />
+                    <Contact email={emailInput} />
                     <FAQs />
                 </div>
             </main>

@@ -5,7 +5,7 @@ import { RefreshCcw } from 'lucide-react';
 export default function PerformanceHighlights() {
     return (
         <SectionContainer>
-            <div className='grid grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 [&>div]:rounded-lg max-w-4xl mx-auto'>
+            <div className='grid grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 [&>div]:rounded-lg max-w-6xl mx-auto'>
                 <div className='flex flex-col bg-accent p-3 sm:p-5 col-span-2'>
                     <p className='text-2xl sm:text-4xl font-semibold'>90%</p>
                     <p className='text-sm font-semibold'>Retention rate</p>
