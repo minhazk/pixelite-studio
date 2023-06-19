@@ -1,8 +1,11 @@
 import SectionContainer from '@/components/ui/SectionContainer';
 import { showToast } from '@/utils/toastNotification';
-import { FormEvent } from 'react';
+import { Loader2 } from 'lucide-react';
+import { FormEvent, useState } from 'react';
 
 export default function Contact({ email }: { email: string }) {
+    const [isLoading, setIsLoading] = useState(false);
+
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         const form = e.target as HTMLFormElement;
@@ -11,7 +14,7 @@ export default function Contact({ email }: { email: string }) {
         const body = formData.get('body') as string;
         console.log(email, body);
         if (email == null || email === '' || body == null || body === '') return showToast('Please fill in all fields');
-
+        setIsLoading(true);
         const res = await fetch('/api/mail', {
             method: 'POST',
             headers: {
@@ -25,6 +28,7 @@ export default function Contact({ email }: { email: string }) {
         } else {
             showToast('There was an error sending your email');
         }
+        setIsLoading(false);
     };
 
     return (
@@ -48,8 +52,13 @@ export default function Contact({ email }: { email: string }) {
                         className='bg-white/10 px-5 py-3 w-full text-xs sm:text-sm rounded-md resize-none h-28 outline-none text-accent border border-transparent focus-within:border-white transition-colors'
                         placeholder='Tell us about your project'
                     ></textarea>
-                    <button className='bg-primary py-2 px-5 rounded-md font-semibold text-xs md:text-sm w-fit hover:opacity-80 focus-within:opacity-80' type='submit'>
+                    <button
+                        disabled={isLoading}
+                        className='bg-primary py-2 px-5 rounded-md font-semibold text-xs md:text-sm w-fit hover:opacity-80 focus-within:opacity-80 flex items-center gap-2'
+                        type='submit'
+                    >
                         Send
+                        {isLoading && <Loader2 size={17} className='animate-spin' />}
                     </button>
                 </form>
             </div>
