@@ -1,6 +1,5 @@
 'use client';
 
-import Header from '@/components/ui/Header';
 import Contact from '@/sections/Contact';
 import FAQs from '@/sections/FAQs';
 import Hero from '@/sections/Hero';
@@ -14,7 +13,6 @@ export default function Home() {
 
     return (
         <>
-            <Header />
             <main>
                 <Hero setEmailInput={setEmailInput} />
                 <div className='px-2'>

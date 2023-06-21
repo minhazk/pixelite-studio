@@ -14,7 +14,7 @@ export default function PreviousWork() {
                         delivering outstanding outcomes, blending captivating design with flawless functionality. Click the button below to explore more of our success stories and witness the
                         transformative power of our work.
                     </p>
-                    <Link href='/' className='bg-white py-2 px-5 text-sm rounded-sm font-semibold mt-5 lg:inline-flex hidden'>
+                    <Link href='/projects' className='bg-white py-2 px-5 text-sm rounded-sm font-semibold mt-5 lg:inline-flex hidden'>
                         View More
                     </Link>
                 </div>
