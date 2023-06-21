@@ -7,7 +7,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ image, name }: ProjectCardProps) {
     return (
-        <div className='aspect-square rounded-lg bg-secondary overflow-hidden relative shadow-lg shadow-secondary'>
+        <div className='aspect-square rounded-lg bg-secondary overflow-hidden relative'>
             <div className='w-full h-full relative'>
                 <Image src={image} alt='e-commerce website' className='object-cover' fill />
             </div>
