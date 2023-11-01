@@ -7,11 +7,13 @@ export const featuredProjects = [
         image: Project1,
         name: 'Ecommerce Clothing Store',
         link: 'https://www.ajgarmz.co.uk/',
+        description: 'Online clothing store including Stripe payment integration',
     },
     {
         image: Project2,
         name: 'Online Social Forum',
         link: 'https://cryptopal-two.vercel.app/home',
+        description: 'Forum posting platform with upvote and downvote system for crypto community',
     },
 ];
 
@@ -21,7 +23,8 @@ export const projects = [
         image: Project3,
         name: 'Service Industry Portfolio ',
         link: 'https://londonsafegas.co.uk/',
-        review: 'I had a fantastic experience working with Minhaz. Communication was excellent, with quick responses at all hours. He was very accommodating and made multiple amendments to the website, providing valuable advice on design. Throughout the process, he demonstrated professionalism and attentiveness to my needs. The final website design surpassed my expectations. I highly recommend Minhaz for his outstanding service.',
+        description: 'Plumbing and Gas Company portfolio featuring services and mail list option',
+        review: 'I had a fantastic experience working with Pixelite Studio. Communication was excellent, with quick responses at all hours. They were very accommodating and made multiple amendments to the website, providing valuable advice on design. Throughout the process, they demonstrated professionalism and attentiveness to my needs. The final website design surpassed my expectations. I highly recommend Pixelite Studio for their outstanding service.',
     },
 ];
 

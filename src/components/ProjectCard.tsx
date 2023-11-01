@@ -1,6 +1,6 @@
 'use client';
 
-import { Link, MonitorSmartphone, User } from 'lucide-react';
+import { Link, MonitorSmartphone, Quote, User } from 'lucide-react';
 import Image, { StaticImageData } from 'next/image';
 import { useState } from 'react';
 
@@ -8,18 +8,19 @@ type ProjectCardProps = {
     image: StaticImageData;
     name: string;
     link?: string;
+    description?: string;
     review?: string;
 };
 
-export default function ProjectCard({ image, name, link, review }: ProjectCardProps) {
+export default function ProjectCard({ image, name, link, description, review }: ProjectCardProps) {
     const [isHovering, setHovering] = useState(false);
     return (
         <div
             onMouseEnter={() => {
                 setTimeout(() => setHovering(true), 350);
             }}
-            onMouseLeave={() => setHovering(false)}
-            className='project-card | flex flex-col gap-4 hover:-translate-y-3 transition-all cursor-pointer hover:shadow-2xl hover:shadow-black duration-700 hover:p-4 rounded-lg hover:scale-x-[1.1] hover:z-50 border border-transparent hover:border-black/30'
+            onMouseLeave={() => setTimeout(() => setHovering(false), 400)}
+            className='project-card | flex flex-col gap-4 hover:-translate-y-3 transition-all cursor-pointer hover:shadow-2xl hover:shadow-black duration-700 hover:p-4 rounded-lg hover:scale-x-[1.02] hover:z-50 border border-transparent hover:border-black/30'
         >
             <div>
                 <div className='aspect-square rounded-lg overflow-hidden relative'>
@@ -45,16 +46,27 @@ export default function ProjectCard({ image, name, link, review }: ProjectCardPr
                 )}
             </div>
 
-            {review && (
-                <div className={`grid overflow-hidden transition-[grid-template-rows] ${isHovering ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'} duration-700`}>
-                    <div className='flex gap-3 min-h-0'>
-                        <div>
-                            <User size={35} className='text-white rounded-full bg-gray-200/10 p-2' />
+            <div className={`grid overflow-hidden transition-[grid-template-rows] ${isHovering ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]'} duration-700 mb-3`}>
+                <div className='min-h-0'>
+                    {description && (
+                        <div className='mb-4 px-3'>
+                            <p className='text-gray-300 text-xs text-center'>{description}</p>
                         </div>
-                        <p className={`text-gray-400 text-xs`}>{review}</p>
-                    </div>
+                    )}
+
+                    {review && (
+                        <div className='flex gap-3'>
+                            <div>
+                                <User size={35} className='text-white rounded-full bg-gray-200/10 p-2' />
+                            </div>
+                            <p className={`text-gray-400 text-xs`}>
+                                <Quote className='scale-x-[-1] float-left mr-2' size={12} />
+                                {review}
+                            </p>
+                        </div>
+                    )}
                 </div>
-            )}
+            </div>
         </div>
     );
 }
