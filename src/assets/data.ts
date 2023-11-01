@@ -1,6 +1,6 @@
 import Project1 from '@/assets/ajgarmz.jpg';
-import Project2 from '@/assets/cryptopal.png';
-import Project3 from '@/assets/londonsafegas.png';
+import Project2 from '@/assets/cryptopal.jpg';
+import Project3 from '@/assets/londonsafegas.jpg';
 
 export const featuredProjects = [
     {
