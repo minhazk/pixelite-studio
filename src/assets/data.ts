@@ -1,6 +1,6 @@
-import Project1 from './ajgarmz.jpg';
-import Project2 from './cryptopal.png';
-import Project3 from './londonsafegas.png';
+import Project1 from '@/assets/ajgarmz.jpg';
+import Project2 from '@/assets/cryptopal.png';
+import Project3 from '@/assets/londonsafegas.png';
 
 export const featuredProjects = [
     {
@@ -11,6 +11,7 @@ export const featuredProjects = [
     {
         image: Project2,
         name: 'Online Social Forum',
+        link: 'https://cryptopal-two.vercel.app/home',
     },
 ];
 
