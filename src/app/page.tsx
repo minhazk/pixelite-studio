@@ -13,16 +13,14 @@ export default function Home() {
 
     return (
         <>
-            <main>
-                <Hero setEmailInput={setEmailInput} />
-                <div className='px-2'>
-                    <PerformanceHighlights />
-                    <Services />
-                    <PreviousWork />
-                    <Contact email={emailInput} />
-                    <FAQs />
-                </div>
-            </main>
+            <Hero setEmailInput={setEmailInput} />
+            <div className='px-2'>
+                <PerformanceHighlights />
+                <Services />
+                <PreviousWork />
+                <Contact email={emailInput} />
+                <FAQs />
+            </div>
         </>
     );
 }

@@ -1,10 +1,12 @@
-import Project1 from '../assets/ecommerce website.jpg';
-import Project2 from '../assets/Cryptopal.png';
+import Project1 from '../assets/ajgarmz.jpg';
+import Project2 from '../assets/cryptopal.png';
+import Project3 from '../assets/londonsafegas.png';
 
 export const featuredProjects = [
     {
         image: Project1,
         name: 'Ecommerce Clothing Store',
+        link: 'https://www.ajgarmz.co.uk/',
     },
     {
         image: Project2,
@@ -12,7 +14,15 @@ export const featuredProjects = [
     },
 ];
 
-export const projects = [...featuredProjects];
+export const projects = [
+    ...featuredProjects,
+    {
+        image: Project3,
+        name: 'Service Industry Portfolio ',
+        link: 'https://londonsafegas.co.uk/',
+        review: 'I had a fantastic experience working with Minhaz. Communication was excellent, with quick responses at all hours. He was very accommodating and made multiple amendments to the website, providing valuable advice on design. Throughout the process, he demonstrated professionalism and attentiveness to my needs. The final website design surpassed my expectations. I highly recommend Minhaz for his outstanding service.',
+    },
+];
 
 export const slides = [
     [

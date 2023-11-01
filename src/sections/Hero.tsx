@@ -18,7 +18,7 @@ export default function Hero({ setEmailInput }: { setEmailInput: Dispatch<SetSta
 
     return (
         <motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ delay: 0.2, duration: 1, ease: 'easeInOut' }} className='text-center pt-8 pb-16 px-8 max-w-2xl mx-auto'>
-            <h1 className='text-primary text-2xl md:text-3xl font-semibold'>ApeX Development</h1>
+            <h1 className='text-primary text-2xl md:text-3xl font-semibold'>Pixelite Studio</h1>
             <h2 className='text-white text-lg my-4 md:text-xl lg:text-3xl font-semibold'>Transforming Ideas into Seamless Digital Experiences</h2>
             <p className='text-xs md:text-sm lg:text-base text-white/60'>Empowering Business Growth with Cutting-Edge Solutions</p>
 

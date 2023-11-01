@@ -8,7 +8,7 @@ export default function Services() {
                 <div>
                     <h2 className='text-primary text-center md:text-left text-lg md:text-xl font-semibold mb-6'>Services</h2>
                     <p className='text-accent text-sm'>
-                        Unlock your digital potential with ApeX Development. We specialize in web and mobile app development services that drive growth and deliver seamless experiences. From
+                        Unlock your digital potential with Pixelite Studio. We specialize in web and mobile app development services that drive growth and deliver seamless experiences. From
                         captivating designs to robust development, trust us to bring your ideas to life and empower your success.
                     </p>
                 </div>

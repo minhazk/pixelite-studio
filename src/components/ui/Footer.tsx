@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <footer className='text-white/70 max-w-6xl mb-10 mt-16 mx-auto flex flex-col sm:flex-row md:items-start gap-8 sm:gap-4 sm:justify-between text-center sm:text-left'>
+        <footer className='text-white/70 max-w-6xl mb-10 mt-16 mx-auto flex flex-col sm:flex-row md:items-start gap-8 sm:gap-4 sm:justify-between text-center sm:text-left w-full'>
             <div>
-                <p className='text-white mb-1 text-md font-medium'>ApeX Development</p>
+                <p className='text-white mb-1 text-md font-medium'>Pixelite Studio</p>
                 <p className='text-xs sm:text-sm'>All rights reserved &copy; {new Date().getFullYear()}</p>
                 <ul className='flex items-center justify-center sm:justify-start mt-3 gap-2'>
                     <li>
@@ -19,7 +19,7 @@ export default function Footer() {
                         </a>
                     </li>
                     <li>
-                        <a href='mailto:ApexDevelopmentSoftware@gmail.com' className='p-2 rounded-full inline-flex first:pl-0 hover:text-white' target='_blank'>
+                        <a href='mailto:pixelitestudio@gmail.com' className='p-2 rounded-full inline-flex first:pl-0 hover:text-white' target='_blank'>
                             <Mail size={22} />
                         </a>
                     </li>
@@ -35,7 +35,7 @@ export default function Footer() {
                         <p>+44 38231297412</p>
                     </li>
                     <li>
-                        <p>ApexDevelopmentSoftware@gmail.com</p>
+                        <p>pixelitestudio@gmail.com</p>
                     </li>
                 </ul>
 

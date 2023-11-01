@@ -9,7 +9,7 @@ export async function POST(req: Request) {
         await transporter.sendMail({
             from: email,
             to: process.env.EMAIL,
-            subject: 'ApeX Development Client Mail',
+            subject: 'Pixelite Studio Client Mail',
             text: `
             Client email: ${email}
                 
