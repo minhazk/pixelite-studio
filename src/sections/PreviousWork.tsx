@@ -1,5 +1,4 @@
 import SectionContainer from '@/components/ui/SectionContainer';
-import ProjectCard from '@/components/ProjectCard';
 import { featuredProjects } from '@/assets/data';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -34,7 +33,7 @@ export default function PreviousWork() {
                 </div>
             </div>
 
-            <Link href='/' className='bg-white py-2 px-5 text-sm rounded-sm font-semibold mt-10 block mx-auto w-fit lg:hidden hover:opacity-80 focus-within:opacity-80'>
+            <Link href='/projects' className='bg-white py-2 px-5 text-sm rounded-sm font-semibold mt-10 block mx-auto w-fit lg:hidden hover:opacity-80 focus-within:opacity-80'>
                 View More
             </Link>
         </SectionContainer>
